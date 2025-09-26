@@ -1,19 +1,2 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>CV Ruslan</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script src='main.js'></script>
-</head>
-<body>
-    <h1>RUSLAN BILONOZHKO</h1>
-    <img src="assets/photo_2025-09-26_17-14-15.jpg" alt="Ruslan Bilonozhko" width="300">
-
-    <p>Contact Information:</p>
-    <li><a href="mailto:gahramanov444@gmail.com">gahramanov444@gmail.com</a></li>
-    <li><a href="callto:+46736171363">+46 73-617 13 63</a></li>
-</body>
-</html>
+# theredguylmao webpage
+go away plz
