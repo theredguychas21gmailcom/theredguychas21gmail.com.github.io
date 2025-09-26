@@ -1,0 +1,303 @@
+/* === Default Kanagawa Wave Dark Theme === */
+:root {
+	--bg: #1f1f28;
+	/* sumiInk1 */
+	--text: #dcd7ba;
+	/* fujiWhite */
+	--heading: #D27E99;
+	/* sakuraPink */
+	--link: #7fb4ca;
+	/* springBlue */
+	--accent: #E6C384;
+	/* highlightGold */
+	--code-bg: #2a2a37;
+	/* sumiInk2 */
+	--hlight-text: #E6C384;
+	/* highlightGold */
+	--enso-highlight: #3f3f4b
+		/* #7e9cd8; */
+		/* crystalBlue (Kanagawa highlight for Enso) */
+}
+
+body {
+	background-color: var(--bg);
+	color: var(--text) !important;
+	font-family: 'Courier New', Courier, monospace;
+	margin: 0;
+	padding: 40px 20px;
+}
+
+h1,
+h2 {
+	color: var(--heading);
+	font-weight: 700;
+	letter-spacing: 0.5px;
+	margin-bottom: 10px;
+}
+
+a {
+	color: var(--text);
+	text-decoration: none;
+	transition: color 0.2s ease;
+}
+
+a:visited {
+	color: var(--text);
+}
+
+a:hover,
+a:active {
+	color: var(--link);
+}
+
+.container {
+	max-width: 900px;
+	margin: 0 auto;
+}
+
+.intro {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px;
+	margin-bottom: 40px;
+	align-items: stretch;
+}
+
+.intro-left {
+	flex: 1;
+	min-width: 180px;
+}
+
+.intro-left img {
+	width: 100%;
+	height: auto;
+	border-radius: 8px;
+	display: block;
+}
+
+.intro-right {
+	flex: 2;
+	min-width: 250px;
+	background-color: var(--code-bg);
+	padding: 15px;
+	border-radius: 8px;
+	display: flex;
+	align-items: center;
+}
+
+.intro-right p {
+	margin: 0;
+	line-height: 1.4;
+}
+
+.intro ul {
+	list-style: none;
+	padding-left: 0;
+}
+
+/* New wrapper to hold timeline and enso vertically */
+.left-column-wrapper {
+	flex: 1;
+	min-width: 250px;
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+}
+
+.main-section {
+	display: flex;
+	gap: 40px;
+	margin-top: 40px;
+	align-items: stretch;
+}
+
+.timeline {
+	/* no flex here, now inside left-column-wrapper */
+}
+
+.enso-circle {
+	background-color: var(--bg);
+	color: var(--enso-highlight);
+	font-family: 'Courier New', Courier, monospace;
+	padding: 20px;
+	border-radius: 8px;
+	white-space: pre;
+	font-size: 13px;
+	text-align: none;
+	min-height: 120px;
+}
+
+.right-wrapper {
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+	flex: 1;
+	min-width: 250px;
+}
+
+ul.timeline,
+ul.skills-list,
+ul.additional-list,
+ul.motivation-links,
+.intro ul {
+	list-style: none;
+	padding-left: 0;
+	margin-top: 10px;
+}
+
+ul li::before {
+	content: "- ";
+	color: var(--text);
+}
+
+ul li {
+	position: relative;
+	padding-top: 6px;
+	margin-bottom: 8px;
+	cursor: default;
+	transition: color 0.3s ease;
+}
+
+ul li:hover {
+	color: var(--accent);
+}
+
+ul.motivation-links li:hover {
+	color: var(--link);
+}
+
+ul li:hover::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 0px;
+	width: 100%;
+	background-color: var(--accent);
+	border-radius: 2px;
+	transition: background-color 0.3s ease;
+}
+
+@media (max-width: 600px) {
+	body {
+		padding: 20px 10px;
+	}
+
+	.intro,
+	.main-section {
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.intro-left,
+	.intro-right,
+	.left-column-wrapper,
+	.right-wrapper,
+	.skills,
+	.additional-info {
+		width: 100%;
+		margin-left: 0;
+	}
+
+	.skills,
+	.additional-info {
+		text-align: center;
+	}
+
+	.intro-right {
+		align-items: flex-start;
+	}
+}
+
+body {
+	font-family: Arial, sans-serif;
+	background: #f5f5f5;
+	margin: 0;
+	padding: 20px;
+}
+
+.grid-container {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 20px;
+	max-width: 1000px;
+	margin: auto;
+	align-items: stretch;
+	/* equal height rows */
+	grid-auto-rows: 1fr;
+	/* all cards follow tallest one */
+}
+
+.card {
+	background-color: #ffffff;
+	border-radius: 8px;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	overflow: hidden;
+	text-align: center;
+	transition: transform 0.2s;
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	/* ensure full height */
+}
+
+.card:hover {
+	transform: translateY(-5px);
+}
+
+.card img {
+	width: 100%;
+	height: 200px;
+	object-fit: cover;
+}
+
+.card-content {
+	padding: 15px;
+}
+
+.card-content h3 {
+	margin: 10px 0 5px;
+	font-size: 1.2em;
+}
+
+.card-content p {
+	color: #666;
+	font-size: 0.95em;
+}
+
+.weather-card {
+	margin-top: 16px;
+	background: white;
+	padding: 20px 30px;
+	border-radius: 12px;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+	text-align: center;
+}
+
+.temp {
+	font-size: 2em;
+	font-weight: bold;
+	margin: 10px 0;
+}
+
+#scrollTopBtn {
+	display: none;
+	/* gömd som standard */
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	z-index: 99;
+	font-size: 18px;
+	border: none;
+	outline: none;
+	background-color: #333;
+	color: white;
+	cursor: pointer;
+	padding: 12px 16px;
+	border-radius: 8px;
+	transition: opacity 0.3s;
+}
+
+#scrollTopBtn:hover {
+	background-color: #555;
+}
