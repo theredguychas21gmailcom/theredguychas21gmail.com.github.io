@@ -111,10 +111,6 @@ a:active {
 	align-items: stretch;
 }
 
-.timeline {
-	/* no flex here, now inside left-column-wrapper */
-}
-
 .enso-circle {
 	background-color: var(--bg);
 	color: var(--enso-highlight);
